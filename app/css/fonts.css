@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Lato Light';
+  src: url("../fonts/lato/LatoLatin-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/LatoLatin-Light.woff") format("woff2"), url("../fonts/lato/LatoLatin-Light.woff") format("woff"), url("../fonts/lato/LatoLatin-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url("../fonts/lato/LatoLatin-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/LatoLatin-Regular.woff") format("woff2"), url("../fonts/lato/LatoLatin-Regular.woff") format("woff"), url("../fonts/lato/LatoLatin-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url("../fonts/Montserrat/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); }

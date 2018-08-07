@@ -1,0 +1,227 @@
+@import "media"
+@import "fonts"
+
+//VARIABLES
+
+$black: #101010
+$light_black: #181818
+$mint: #00FFFC
+$violet: #9A00FF
+$white: #FFFFFF
+$dark_gray: #5A5A5A
+$gray: #C4C4C4
+$red: #DF584D
+
+.flex
+	display: flex
+.grid
+	display: grid
+
+body
+	margin: 0
+	padding: 0
+	background-color: $mint
+	font-family: 'Montserrat Light'
+	display: flex
+
+@keyframes rotateLeft
+  100%
+    transform: scale(1.2)
+
+//CONTENT START
+
+.content
+	width: 100%
+	height: calc(100vh - 8px)
+	margin: 4px
+	background-color: $light_black
+
+//NAVIGATION START
+
+nav
+	width: 70px
+	height: calc(100vh - 8px)
+	background-color: $black
+	flex-direction: column
+	align-items: center
+
+	//LOGO
+
+	.logo
+		width: 100%
+		height: 15%
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		border-bottom: 4px solid $light_black
+		svg
+			// animation: rotateLeft 0s linear infinite
+			path:hover
+				&:nth-child(5)
+				animation: rotateLeft 1s linear infinite
+				&:nth-child(41)
+					animation: rotateLeft 1s linear infinite
+				&:nth-child(42)
+					animation: rotateLeft 1s linear infinite
+
+	//MENU
+
+	.menu
+		width: 100%
+		height: 70%
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		svg
+			margin-top: 20%
+			margin-bottom: 20%
+			cursor: pointer
+			transition: all 3s easy-in-out
+			&:hover
+				path
+					fill: $mint
+				
+		.home
+			width: 30px
+			height: 30px
+		.info
+			width: 30px
+			height: 30px
+		.team
+			width: 30px
+			height: 30px
+		.service
+			width: 30px
+			height: 30px
+		.portfolio
+			width: 30px
+			height: 30px
+		.contact
+			width: 30px
+			height: 30px
+
+	//SOCIAL NETWORK
+
+	.social
+		width: 100%
+		height: 70px
+		border-top: 4px solid $light_black
+		border-bottom: 4px solid $light_black
+		grid-template-columns: repeat(2, 1fr)
+		.behance
+			justify-self: center
+			align-self: center
+			svg
+				width: 15px
+				height: 15px
+		.github
+			justify-self: center
+			align-self: center
+			svg
+				width: 15px
+				height: 15px
+		.instagram
+			justify-self: center
+			align-self: center
+			svg
+				width: 15px
+				height: 15px
+		.facebook
+			justify-self: center
+			align-self: center
+			svg
+				width: 15px
+				height: 15px
+
+	//LANGUAGE
+
+	.language
+		width: 100%
+		height: 25px
+		border-bottom: 4px solid $light_black
+		justify-content: space-around
+		align-items: center
+		font-family: 'Lato Light',sans-serif
+		font-size: 16px
+		color: rgb(90, 90, 90)
+
+//NAVIGATION END
+
+//TEAM START
+
+.team
+	width: 100%
+	grid-template-columns: 20% 50% 30%
+	grid-template-rows: 15% 1fr
+
+	//HEADER
+
+	h1
+		margin: 0
+		font-size: 48px
+		color: $mint
+		grid-column: 1 / 4
+		align-items: center
+		justify-content: center
+		width: 20%
+
+	//IMG BLOCK
+
+	.team_img
+		width: 100%
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		grid-column: 20%
+		.img_container
+			margin: 0
+			position: relative
+			width: 20vh
+			height: 20vh
+			.img
+				position: absolute
+				background-size: cover
+				z-index: 3
+				width: 100%
+				height: 100%
+			.ira_img
+				background-image: url(../img/ira.png)
+			.alex_img
+				background-image: url(../img/alex.png)
+			.demi_img
+				background-image: url(../img/demi.png)
+			.mint_cube
+				position: absolute
+				z-index: 1
+				width: 100%
+				height: 100%
+				top: 1.5vh
+				left: 1.5vh
+				background-color: $mint
+				opacity: .50
+			.violet_cube
+				position: absolute
+				z-index: 0
+				width: 100%
+				height: 100%
+				bottom: 1.5vh
+				right: 1.5vh
+				background-color: $violet
+				opacity: .50
+
+	//DESCRIPTON
+	.team_description
+		flex-direction: column
+		justify-content: space-around
+		.team_container
+			flex-direction: column
+			.name
+				font-size: 24px
+				color: $mint
+			.special
+				font-size: 18px
+				color: $violet
+				margin-bottom: 3vh
+			.text
+				font-size: 14px
+				color: $white
